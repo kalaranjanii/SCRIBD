@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCRIBD</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+   
+    
+    <link rel="stylesheet" href="/style.css" />
+
+    
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i id="logo1" class="bx bx-menu menu-icon" ></i>
+        <span class="logo-name">SCRIBD</span>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i id="logo2" class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">SCRIBD</span>
+        </div>       
+        <div class="main">
+          <!-- <h1>SCRIBD</h1> -->
+          <input type="text" placeholder="Search"><hr>
+          <div class="a">
+              <a href="">Explore</a>
+              <a href="">Upload</a>
+              <a href="">FAQ</a>
+          </div>
+          <p>Browse by</p>
+          <div class="b">
+              
+              <a href="">Books</a>
+              <a href="">Magazines</a>
+              <a href="">Documents</a>
+              <a href="">Audiobooks</a>
+              <a href="">Podcasts</a>
+              <a href="">Sheet music</a>
+          </div>
+          <div class="c">
+              <p>Interests</p>
+              <a href="">Career & Growth</a>
+              <a href="">Business</a>
+              <a href="">Finance & Money Management</a>
+              <a href="">Politics</a>
+              <a href="">Sports & Recreation</a>
+              <a href="">Games & Activities</a>
+              <a href="">Comics & Graphic Novels</a>
+              <a href="">Social Science</a>
+              <a href="">True Crime</a>
+              <a href="">Travel</a>
+          </div>
+          <hr>
+          <div class="apps-1">
+              <p>Download our app to read books on any device</p>
+              <img src="/images/apps.png" alt="">
+              <img src="/images/apps2" alt="">
+              <img src="/images/app3.png" alt="">
+            </div>
+      </div>
+        </div>
+      <button id="signinbtn" class="signinbtn" >Sign in</button>
+
+       
+      </div>
+
+      <!-- login -->
+      <section class="home">
+        <div class="form_container">
+          <i class="uil uil-times form_close"></i>
+          <!-- Login From -->
+          <div class="form login_form">
+            <form action="#">
+              <h2>Login</h2>
+  
+              <div class="input_box">
+                <input type="email" id="email1" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" id="pw2" placeholder="Enter your password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <div class="option_field">
+                <span class="checkbox">
+                  <input type="checkbox" id="check" />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+              </div>
+  
+              <button class="button1" onclick="fun1()">Login Now</button>
+  
+              <div class="login_signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+            </form>
+          </div>
+  
+          <!-- Signup From -->
+          <div class="form signup_form">
+            <form action="#">
+              <h2>Signup</h2>
+  
+              <div class="input_box">
+                <input type="email" id="email" placeholder="Enter your email" required />
+                <i class="uil uil-envelope-alt email"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" id="pw" placeholder="Create password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+              <div class="input_box">
+                <input type="password" id="pw1" placeholder="Confirm password" required />
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+              </div>
+  
+              <button class="button" onclick="fun()">Signup Now</button>
+  
+              <div class="login_signup">Already have an account? <a href="#" id="login">Login</a></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <section class="overlay"></section>
+
+<!-- body content -->
+  <div class="para">
+  <h1>Endless entertainment and knowledge</h1>
+  <p class="para1">Read or listen anytime, anywhere.</p>
+  <button>Read free for 30 days</button>
+  <p class="para2">Only ₹299/month after. <b>Cancel anytime.</b> </p>
+  </div>
+  <div class="image">
+    <img src="/images/books" alt="">
+</div>
+<div class="sub">
+  <h1>All in one simple subscription</h1>
+  <div class="content" >
+  <h3>Book</h3>
+  <h3>Audiobooks</h3>
+  <h3>Magazines</h3>
+  <h3>Podcasts</h3>
+  <h3>Sheet music</h3>
+  <h3>Documents</h3>
+</div>
+<div class="icons">
+  <i id="icon" class="fa-sharp fa-solid fa-book-open-reader"></i>
+  <i id="icon" class="fa-sharp fa-solid fa-headphones"></i>
+  <i id="icon" class="fa-sharp fa-solid fa-book"></i>
+  <i id="icon" class="fa-solid fa-microphone-lines"></i>
+  <i id="icon" class="fa-solid fa-music"></i>
+  <i id="icon" class="fa-solid fa-file-invoice"></i>
+</div>
+<div class="book">
+  <h1>The best books and audiobooks are waiting for you</h1>
+
+</div>
+<div class="books">
+  <img src="/images/b1" alt="">
+  <img src="/images/b2" alt="">
+  <img src="/images/b3" alt="">
+  <img src="/images/b4" alt="">
+  <img src="/images/b5" alt="">
+  <img src="/images/b6" alt="">
+  <img src="/images/b7" alt="">
+  <img src="/images/b8" alt="">
+  <img src="/images/b9" alt="">
+  <img src="/images/b10" alt="">
+  <img src="/images/b11" alt="">
+  <img src="/images/b12" alt="">
+</div>
+<div class="btn">
+  <button>Read free for 30 days</button>
+  <p>Cancel anytime.</p>
+</div>
+</div>
+
+<div class="footer">
+  <div class="footer1">
+  <div class="f1">
+      <ul>
+          <h3>About</h3>
+          <li><a href="">About Scribd</a></li>
+          <li><a href="">Press</a></li>
+          <li><a href="">Our blog</a></li>
+          <li><a href="">Join our team!</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">Invite friends</a></li>
+          <li><a href="">Gifts</a></li>
+          <li><a href="">Scribd for enterprise</a></li>
+      </ul>
+  </div>            
+  <div class="f1">
+      <ul>
+          <h3>Support</h3>
+          <li><a href="">Help / FAQ</a></li>
+          <li><a href="">Accessibility</a></li>
+          <li><a href="">Purchase help</a></li>
+          <li><a href="">AdChoices</a></li>
+          <li><a href="">Publishers</a></li>                    
+      </ul>
+  </div>
+  <div class="f1">
+      <ul>
+          <h3>Legal</h3>
+          <li><a href="">Terms</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Copyright</a></li>
+          <li><a href="">Cookie Preferences</a></li>
+          <li><a href="">Do not sell or share <br> my personal information</a></li>                    
+      </ul>
+  </div>
+  <div class="f1">
+      <ul>
+          <h3>Social</h3>
+          <li><i class="fa-brands fa-instagram"></i><a href="">Instagram</a></li>
+          <li><i class="fa-brands fa-twitter"></i><a href="">Twitter</a></li>
+          <li><i class="fa-brands fa-facebook"></i><a href="">Facebook</a></li>
+          <li><i class="fa-brands fa-pinterest"></i><a href="">Pinterest</a></li>                    
+      </ul>
+  </div>
+  
+  
+</div>
+
+<div class="footer2">
+  <ul class="f2">
+      <li><a href="">Audiobooks</a></li>
+      <li><a href="">Books</a></li>
+      <li><a href="">Documents</a></li>
+      <li><a href="">Magazines</a></li>
+      <li><a href="">Podcasts</a></li>
+      <li><a href="">Sheet music</a></li>
+      <li><a href="">Snapshots</a></li>
+  </ul>
+</div>
+<div class="apps">
+  <p>Get our free apps</p>
+  <img src="/images/apps.png" alt="">
+  <img src="/images/apps2" alt="">
+</div>
+</div>
+
+        
+ 
+
+    <script src="/home.js"></script>
+  </body>
+</html>
